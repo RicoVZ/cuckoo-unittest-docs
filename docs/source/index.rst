@@ -15,4 +15,5 @@ A unit test file is written in `JSON <https://en.wikipedia.org/wiki/JSON>`_. Eac
 Contents:
 
 .. toctree::
-   testinfo/index
+ 
+    creatingtests/index
