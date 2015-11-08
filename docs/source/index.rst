@@ -1,24 +1,18 @@
-.. cuckoo-unittest documentation master file, created by
-   sphinx-quickstart on Sun Nov  8 02:06:40 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Cuckoo unit test writing
+========================
+This piece of documentation will teach you how to write a unit test for Cuckoo-unittest.
 
-Welcome to cuckoo-unittest's documentation!
-===========================================
+After reading the pages in the documentation you will be able to:
+
+- Create a test file
+- What to put into each test
+- Automatically verify that your test file is free of errors
+
+The unit test files are used to tell Cuckoo-unittest what to look for in the Cuckoo log.
+A unit test file is written in `JSON <https://en.wikipedia.org/wiki/JSON>`_. Each test file consists of two sections; a section that contains information about the test, and a section that contains the actual tests.
+
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
-   
-   Test
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   testinfo/index

@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'cuckoo-unittest'
+project = u'Cuckoo unittest'
 copyright = u'2015, RicoVZ'
 author = u'RicoVZ'
 
