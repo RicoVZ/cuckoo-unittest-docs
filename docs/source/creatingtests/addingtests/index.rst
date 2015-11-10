@@ -44,4 +44,6 @@ Each test key in the 'tests' key should be seperated by a comma. Like so:
 		}
 	}
 
-Documentation on each type of test is coming soon..
+.. toctree::
+
+    testkeys

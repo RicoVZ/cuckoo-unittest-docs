@@ -77,7 +77,7 @@ Example:
 		"test_info": {
 			"test_name":"SomeTestName",
 			"sample_filename":"5db1fee4b5703808c48078a76768b155b421b210c0761cd6a5d223f4d99f1eaa",
-			"sample_sha1":"5db1fee4b5703808c48078a76768b155b421b210c0761cd6a5d223f4d99f1eaa"
+			"sample_sha1":"77ba9cd915c8e359d9733edcfe9c61e5aca92afb"
 		},
 		"tests": {
 		}
