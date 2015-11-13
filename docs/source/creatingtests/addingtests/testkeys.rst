@@ -247,3 +247,144 @@ Example:
 			]
 		}
 	}
+
+check_expected_mutexes_created
+------------------------------
+This test checks if the specified mutex or the specified pattern is found in the created mutexes.
+
+*Data type: Dictionary with string key and string value*
+
+- Wilcards: No
+- Regular expressions: Yes
+
+In this test, the key is the name or pattern of the mutex you expect to find.
+The value is a setting, this setting can be the value "regex_on" or "regex_off".
+
+You can use the regular expressions in cases where a random mutex name is generated. But you
+might know that it always has a length of 16 characters.
+
+For a guide on regular expressions, look here: `python regular expressions <https://developers.google.com/edu/python/regular-expressions>`_
+
+You can use `pythex.org <http://pythex.org/>`_ to test your regular expression. Make sure it only matches the values you expect.
+
+
+Example:
+
+ .. code-block:: javascript
+    :linenos:
+ 
+	{
+		"test_info": {
+		},
+		"tests": {
+			  "check_expected_mutexes_created": {
+				  "^[A-Z0-9]{16}$": "regex_on",
+				  "SuperAwesomeMutexName": "regex_off"
+			  }
+		}
+	}
+
+check_expected_ips_connected
+----------------------------
+This test checks if the specified IP addresses were connected to. 
+
+*Data type: List with strings*
+
+- Wilcards: No
+- Regular expressions: No
+
+Example:
+
+ .. code-block:: javascript
+    :linenos:
+ 
+	{
+		"test_info": {
+		},
+		"tests": {
+			"check_expected_ips_connected": [
+				"8.8.8.8",
+				"144.55.48.7"
+			]
+		}
+	}
+
+check_expected_hosts_connected
+------------------------------
+This test checks if the specified hostnames were connected to.
+
+*Data type: List with strings*
+
+- Wilcards: No
+- Regular expressions: No
+
+Example:
+
+ .. code-block:: javascript
+    :linenos:
+ 
+	{
+		"test_info": {
+		},
+		"tests": {
+			"check_expected_hosts_connected": [
+				"malicious.something.com",
+				"virus.ru"
+			]
+		}
+	}
+
+check_expected_processes
+------------------------
+This test checks if the processes and amount of them were started.
+
+*Data type: Dictionary with string key and integer value*
+
+- Wilcards: No
+- Regular expressions: No
+
+The key is the name of the process you expect to be started.
+The value is the amount of times you expect the process to be started.
+
+Example:
+
+ .. code-block:: javascript
+    :linenos:
+ 
+	{
+		"test_info": {
+		},
+		"tests": {
+			  "check_expected_processes": {
+				  "regsvr32.exe": 2,
+				  "virus.exe": 1
+			  }
+		}
+	}
+
+check_expected_dll_loaded
+-------------------------
+This test checks if the specified DLLs were loaded
+
+*Data type: List with strings*
+
+- Wilcards: Yes
+- Regular expressions: No
+
+The value of this test should contain a path to a DLL. If you don't know the path, use the * wildcard.
+
+Example:
+
+ .. code-block:: javascript
+    :linenos:
+ 
+	{
+		"test_info": {
+		},
+		"tests": {
+			"check_expected_dll_loaded": [
+				"*SomeDLL.dll",
+				"C:\\WINDOWS\\system32\\wininet.dll"
+			]
+		}
+	}
