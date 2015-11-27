@@ -258,7 +258,8 @@ This test checks if the specified mutex or the specified pattern is found in the
 - Regular expressions: Yes
 
 In this test, the key is the name or pattern of the mutex you expect to find.
-The value is a setting, this setting can be the value "regex_on" or "regex_off".
+The value is a setting, this setting can be the value "regex_on" or "regex_off". When using "regex_on", the
+key will be read as a regular expression. If "regex_off" is used, it will be read as a normal string.
 
 You can use the regular expressions in cases where a random mutex name is generated. But you
 might know that it always has a length of 16 characters.
