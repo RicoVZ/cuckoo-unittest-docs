@@ -26,6 +26,7 @@ The available tests are:
 - check_expected_hosts_connected - *Type: List: String*
 - check_expected_processes - *Type: Dictionary: String:Integer*
 - check_expected_dll_loaded - *Type: List: String*
+- check_expected_monitor_log_lines - *Type: Dictionary: String:dictionary(String:integer)*
 
 Each test key in the 'tests' key should be seperated by a comma. Like so:
  .. code-block:: javascript

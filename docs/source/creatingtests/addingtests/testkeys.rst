@@ -420,11 +420,11 @@ Example:
 		"test_info": {
 		},
 		"tests": {
-		  "check_expected_monitor_log_lines": {
-				"*INFO:Test passed:*": {">=": 4},
-				"*CRITICAL:Test didn't pass:*": {"==": 0},
-				"*Starting analyzer*": {"<": 4},
-				"*lib.common.registry*": {">=": 5}
-		  }
+			  "check_expected_monitor_log_lines": {
+					"*INFO:Test passed:*": {">=": 4},
+					"*CRITICAL:Test didn't pass:*": {"==": 0},
+					"*Starting analyzer*": {"<": 4},
+					"*lib.common.registry*": {">=": 5}
+			  }
 		}
 	}

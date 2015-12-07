@@ -17,3 +17,5 @@ Contents:
 .. toctree::
  
     creatingtests/index
+    utilities/index
+	
