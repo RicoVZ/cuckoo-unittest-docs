@@ -2,7 +2,7 @@ Cuckoo unit test writing
 ========================
 This piece of documentation will teach you how to write a unit test for Cuckoo-unittest.
 
-After reading the pages in the documentation you will be able to:
+After reading  the pages in the documentation you will be able to:
 
 - Create a test file
 - What to put into each test
